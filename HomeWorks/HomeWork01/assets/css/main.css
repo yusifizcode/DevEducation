@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 1100px;
+  margin: auto;
+}
+.person_info {
+  display: flex;
+  font-size: 18px;
+}
+h1 {
+  margin: 20px 0px;
+  font-weight: 400;
+}
+img {
+  width: 130px;
+  height: auto;
+}
+.person_info_item {
+  margin-left: 20px;
+}
+.person_info_item p {
+  padding: 2px 0px;
+}
+.person_info_item p a {
+  text-decoration: none;
+  color: black;
+}
+#employee_info {
+  padding: 20px 0px;
+}
+#employee_info h4 {
+  font-size: 20px;
+}
+#employee_info .birth-date {
+  display: flex;
+}
+#employee_info .birth-date .birth-date-summary {
+  margin-left: 50px;
+}
+#employee_info .english-level {
+  margin: 5px 0px;
+}
+#employee_info .english-level-summary {
+  padding: 5px 0px;
+  display: flex;
+  gap: 5px;
+}
+#employee_info .english-level-summary input {
+  margin-left: 5px;
+}
+#employee_info .key-skills .key-skills-summary {
+  padding: 5px 0px;
+}
+#employee_info .key-skills .key-skills-summary ul {
+  list-style-type: none;
+}
+#employee_info .key-skills .key-skills-summary ul li {
+  padding: 2px 0px;
+}
+#employee_info .key-skills .key-skills-summary input,button {
+  padding: 3px 5px;
+  font-size: 12px;
+  color: black;
+}
+#employee_info .language-sector{
+    display: flex;
+    margin: 5px 0px;
+}
+#employee_info .language-sector form{
+    margin-left: 30px;
+}
+#employee_info .salary{
+    display: flex;
+    margin: 5px 0px;
+}
+#employee_info .salary input{
+    margin-left: 30px;
+    padding: 3px 5px;
+    font-size: 12px;
+    color: black;
+}
+#employee_info .other-skills{
+    margin: 10px 0px;
+}
+#employee_info .education{
+    margin: 5px 0px;
+}
+#employee_info .education table{
+    width: 500px;
+}
+#employee_info .education table,th,td{
+    border: 1px solid black;
+}
