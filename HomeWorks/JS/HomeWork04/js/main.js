@@ -86,38 +86,30 @@ else {
 }
 
 //6. The user enters a two-digit number. 
-//Print the literal representation of this number to the console. 
-//For example, typing "25" will display "twenty five" in the console, and "13" will display "thirteen".
+var singularities = [' ','One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine'];
+var twos = [ ' ','Eleven', 'Twelve', 'Thirteen', 'Fourteen', 'Fifteen', 'Sixteen', 'Seventeen', 'Eighteen', 'Nineteen'];
+var tens = [ ' ','Ten', 'Twenty', 'Thirty', 'Forty', 'Fifty', 'Sixty', 'Seventy', 'Eighty', 'Ninety'];
+var a = +prompt("Enter the number with 2 digit: ")
 
-// var once = ['Zero', ' One', ' Two', ' Three', ' Four', ' Five', ' Six', ' Seven', ' Eight', ' Nine'];
-// var twos = ['Ten', ' Eleven', ' Twelve', ' Thirteen', ' Fourteen', ' Fifteen', ' Sixteen', ' Seventeen', ' Eighteen', ' Nineteen'];
-// var tens = ['', 'Ten', ' Twenty', ' Thirty', ' Forty', ' Fifty', ' Sixty', ' Seventy', ' Eighty', ' Ninety'];
+let numLen = a.toString().length
+if (numLen>2){
+    console.log("Please enter two-digit number !")
+}
+else if (numLen==2 && a%10!=0 && a>=20){
+    let first =  Math.floor(a/10);
+    let second = a%10
+    console.log(tens[first]+" "+singularities[second])
+}
+else if (a>10 && a<20){
+let x = a%10
+console.log(twos[x])
+}
+else if (a%10==0){
+    let x =a/10
+    console.log(tens[x])
+}
+else {
+    console.log(singularities[a])
+}
 
-// let numLen = a.toString().length
-// console.log(numLen)
-// if (numLen>2){
-//     console.log("Please enter two-digit number !")
-// }
-// else if (numLen==2){
-//     let first =  Math.floor(a/10);
-//     let second = a%10
-//     console.log(tens)
-// }
 
-const num = prompt("Eded daxil edin: ")
-
-if(num % 10 == 0 && num - (num % 10) == 10){
-    console.log("ten");
-}
-else if(num % 10 == 1 && num - (num % 10) == 10){
-    console.log("eleven");
-}
-else if(num % 10 == 2 && num - (num % 10) == 10){
-    console.log("twenty");
-}
-else if(num % 10 == 3 && num - (num % 10) == 10){
-    console.log("thirteen");
-}
-else if(num % 10 == 4 && num - (num % 10) == 10){
-    console.log("thirteen");
-}
