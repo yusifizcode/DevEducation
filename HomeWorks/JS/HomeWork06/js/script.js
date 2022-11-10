@@ -54,6 +54,29 @@ console.log(numberofOddElements);
 
 //8. Swap the first and second half of the array, for example, for an array of 1234, the result is 3412, or for 12345 the result will be 45312.
 
+// const arr = [56, 8, -3, 55,8,9,10];//55 5 -3 56 8
+// console.log(`Original array:${arr}`);
+// let y;
+// let m;
+// if (arr.length % 2 == 1) {
+//   m = (arr.length - 1) / 2 ;
+// } else {
+//   m = arr.length / 2;
+// }
+// for (let i = 0; i < m; i++) {
+//     y = arr[i];
+//     if(arr.length%2==0){
+//         arr[i] = arr[i+m];
+//         arr[i+m] = y;
+//     }
+//     else{
+//       arr[i] = arr[i+m+1];
+//       arr[i+m+1] = y;
+//     }
+// }
+// console.log(`Reversing array:${arr}`)
+
+
 //9. Sort the array in ascending order in one of the following ways: bubble sort, selection sort or insertion sort.
 
 //selection sort
@@ -110,3 +133,26 @@ console.log(numberofOddElements);
 
 // insertion_sort(arr);
 // console.log(arr);
+
+
+// 10. Sort the array in descending order in one of the ways (different from the method taken in the 9th task): bubble sort, selection sort or insertion sort.
+//bubble sort
+// const arr = [56 ,-3,15,4,98]
+// console.log(`Original array:${arr}`)
+// let x=0
+// let t=1
+// while(x<=arr.length-1){
+//     let m= 1
+//     for(let i = 0;i<arr.length-x;i++){
+//         if(arr[i]<arr[i+1]){
+//           let y = arr[i]
+//           arr[i]=arr[i+1]
+//           arr[i+1]=y
+//         }
+//         console.log(`     //Step ${t}.${m}:  ${arr}`)
+//         m++
+//       }
+//       x++
+//       t++
+// }
+// console.log(`Sorting array:${arr}`)
