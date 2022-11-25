@@ -1,0 +1,797 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header {
+  padding: 10px 20px;
+}
+header #top {
+  font-family: Arial, Helvetica, sans-serif;
+}
+header #top .top {
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header #top .logo {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  font-family: "Lobster", cursive;
+}
+header #top .nav {
+  width: 30%;
+}
+@media screen and (max-width: 920px) {
+  header #top .nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  header #top .nav {
+    width: 50%;
+  }
+}
+header #top .nav ul {
+  padding: 0;
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+}
+header #top .nav ul li {
+  list-style: none;
+  transition: all 0.5s;
+}
+header #top .nav ul li:hover {
+  text-shadow: 1px 1px 5px white;
+  cursor: pointer;
+}
+header #top .button button {
+  background-color: transparent;
+  border: 1px solid grey;
+  padding: 10px;
+  font-size: 17px;
+  border-radius: 5px;
+  transition: all 0.5s;
+  margin: 0 10px;
+}
+header #top .button button:hover {
+  box-shadow: 0 0 80px 10px rgba(255, 255, 255, 0.644);
+  cursor: pointer;
+}
+header #hero {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 60px 20px;
+}
+header #hero .hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header #hero .text {
+  width: 30%;
+}
+@media screen and (max-width: 920px) {
+  header #hero .text {
+    width: 100%;
+  }
+}
+header #hero .text h1 {
+  font-size: 35px;
+  color: rgb(78, 78, 78);
+}
+header #hero .text p.name {
+  font-size: 14px;
+  letter-spacing: 6px;
+  position: relative;
+  padding: 10px 40px;
+}
+header #hero .text p.name::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.877);
+  top: 50%;
+  left: 0px;
+  transform: translate(0, -50%);
+}
+header #hero .text p {
+  line-height: 30px;
+  padding: 20px 0;
+}
+header #hero .text span {
+  color: #7e74f1;
+}
+header #hero .text .icon {
+  color: grey;
+  font-size: 20px;
+  padding: 20px 0;
+}
+header #hero .text .icon i {
+  padding: 0 20px 0 0;
+  transition: all 0.5s;
+}
+header #hero .text .icon i:hover {
+  cursor: pointer;
+  color: #7e74f1;
+  text-shadow: 1px 1px 15px white;
+}
+header #hero .img {
+  width: 20%;
+  background-color: #7e74f1;
+  transform: rotate(15deg);
+  border-radius: 10px;
+}
+@media screen and (max-width: 920px) {
+  header #hero .img {
+    width: 40%;
+  }
+}
+header #hero .img img {
+  max-width: 100%;
+  transform: rotate(-15deg);
+  border-radius: 10px;
+}
+
+main #service {
+  background-color: rgb(248, 248, 248);
+  text-align: center;
+}
+main #service .service {
+  padding: 50px 20px;
+}
+main #service p.name {
+  letter-spacing: 6px;
+  display: inline-block;
+  position: relative;
+  padding: 10px 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+main #service p.name::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.637);
+  top: 50%;
+  left: 10px;
+  transform: translate(0, -50%);
+}
+main #service h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  font-size: 28px;
+}
+main #service .content {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+main #service .content .item {
+  background-color: white;
+  width: 25%;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 920px) {
+  main #service .content .item {
+    width: 75%;
+    margin-bottom: 20px;
+  }
+}
+main #service .content .item i {
+  font-size: 40px;
+  background-color: rgba(128, 128, 128, 0.178);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  color: #7e74f1;
+}
+main #service .content .item p {
+  font-size: 18px;
+  padding: 20px 0;
+}
+main #portfolio {
+  font-family: Arial, Helvetica, sans-serif;
+}
+main #portfolio .portfolio {
+  padding: 50px;
+}
+main #portfolio p.name {
+  letter-spacing: 6px;
+  display: inline-block;
+  position: relative;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+main #portfolio p.name::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: rgba(58, 58, 58, 0.76);
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+}
+main #portfolio h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  font-size: 28px;
+}
+main #portfolio .content {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+main #portfolio .content .item {
+  width: 25%;
+  padding: 0 0 20px 0;
+  margin: 0 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.5s;
+  border: 1px solid rgba(128, 128, 128, 0.616);
+}
+@media screen and (max-width: 820px) {
+  main #portfolio .content .item {
+    width: 75%;
+    margin-bottom: 20px;
+  }
+}
+main #portfolio .content .item:hover {
+  background-color: rgba(97, 97, 84, 0.308);
+}
+main #portfolio .content .item .img {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+}
+main #portfolio .content .item .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.6;
+}
+main #portfolio .content .item h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 3px;
+  padding: 20px 10px;
+}
+main #portfolio .content .item a {
+  text-decoration: none;
+  color: grey;
+  padding: 0 10px;
+}
+main #portfolio .content .item a span {
+  margin-right: 20px;
+}
+main #experience {
+  background-color: rgb(248, 248, 248);
+  padding: 40px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main #experience .experience {
+  padding: 10px;
+  border-radius: 10px;
+}
+main #experience .experience p.name {
+  letter-spacing: 6px;
+  display: inline-block;
+  position: relative;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+main #experience .experience p.name::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: rgb(77, 77, 76);
+  top: 50%;
+  left: 0;
+}
+main #experience .experience h1 {
+  letter-spacing: 2px;
+  font-size: 28px;
+  padding-bottom: 50px;
+}
+main #experience .experience .content {
+  padding: 50px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+main #experience .experience .content .left {
+  width: 30%;
+}
+@media screen and (max-width: 920px) {
+  main #experience .experience .content .left {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+main #experience .experience .content .left ul {
+  padding: 0;
+}
+main #experience .experience .content .left ul li {
+  list-style: none;
+  font-size: 20px;
+  padding: 15px;
+  margin: 5px 0;
+  transition: all 0.5s;
+  border-radius: 5px;
+}
+main #experience .experience .content .left ul li:hover {
+  background-color: white;
+  padding: 15px 25px;
+  color: #7e74f1;
+  cursor: pointer;
+}
+main #experience .experience .content .left ul li i {
+  margin-left: 60px;
+}
+main #experience .experience .content .right {
+  width: 50%;
+  padding: 25px;
+  width: 50%;
+  font-size: 18px;
+  line-height: 25px;
+}
+@media screen and (max-width: 920px) {
+  main #experience .experience .content .right {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+main #experience .experience .content .right h4 {
+  color: grey;
+}
+main #experience .experience .content .right .adress {
+  color: darkgrey;
+  padding: 10px 0 5px;
+  font-size: 14px;
+}
+main #experience .experience .content .right .date {
+  font-size: 14px;
+}
+main #experience .experience .content .right ul {
+  list-style: none;
+  padding: 50px 0;
+}
+main #experience .experience .content .right ul li {
+  padding: 10px 25px;
+  font-size: 15px;
+  color: grey;
+  position: relative;
+}
+main #experience .experience .content .right ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 10px;
+  height: 2px;
+  background-color: rgba(128, 128, 128, 0.623);
+}
+main #blog {
+  padding: 50px 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+main #blog p.name {
+  letter-spacing: 4px;
+  display: inline-block;
+  position: relative;
+  padding: 10px 30px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+main #blog p.name::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: black;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+}
+main #blog h1 {
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 28px;
+}
+main #blog .content {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  color: gray;
+  flex-wrap: wrap;
+}
+main #blog .content .item {
+  text-align: left;
+  width: 25%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+@media screen and (max-width: 920px) {
+  main #blog .content .item {
+    width: 51%;
+    margin-bottom: 20px;
+  }
+}
+main #blog .content .item .img {
+  width: 100%;
+}
+main #blog .content .item .img img {
+  width: 100%;
+  height: 250px;
+}
+@media screen and (max-width: 920px) {
+  main #blog .content .item .img img {
+    height: 200px;
+  }
+}
+main #blog .content .item .text .date {
+  font-size: 14px;
+  padding: 15px 0;
+}
+main #blog .content .item .text p {
+  letter-spacing: 1px;
+}
+main #blog .content .item .text h3 {
+  color: rgb(87, 87, 87);
+  padding-top: 10px;
+}
+main #blog .content .item .text .contunie {
+  text-align: center;
+  text-transform: capitalize;
+  padding: 30px 0;
+  font-size: 15px;
+  transition: all 0.5s;
+}
+main #blog .content .item .text .contunie:hover {
+  color: white;
+  cursor: pointer;
+  background-color: rgba(170, 113, 218, 0.534);
+}
+main #contact {
+  background-color: rgb(248, 248, 248);
+  padding: 40px 20px;
+}
+main #contact .contact {
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+main #contact .contact .left {
+  width: 50%;
+}
+@media screen and (max-width: 920px) {
+  main #contact .contact .left {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+main #contact .contact .left input, main #contact .contact .left textarea {
+  display: block;
+  width: 90%;
+  padding: 15px 20px;
+  margin: 25px 0;
+  border: none;
+  border-radius: 10px;
+}
+@media screen and (max-width: 920px) {
+  main #contact .contact .left input, main #contact .contact .left textarea {
+    width: 100%;
+  }
+}
+main #contact .contact .left input:focus, main #contact .contact .left textarea:focus {
+  outline: 1px solid #7e74f1;
+  border-radius: 10px;
+}
+main #contact .contact .left button {
+  padding: 15px 30px;
+  font-size: 17px;
+  background-color: #7e74f1;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  width: 90%;
+}
+@media screen and (max-width: 920px) {
+  main #contact .contact .left button {
+    width: 100%;
+  }
+}
+main #contact .contact .right {
+  width: 40%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width: 920px) {
+  main #contact .contact .right {
+    width: 100%;
+  }
+}
+main #contact .contact .right ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+main #contact .contact .right li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+main #contact .contact .right li .icon {
+  background-color: rgba(197, 197, 197, 0.274);
+  width: 60px;
+  height: 60px;
+  color: #7e74f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-right: 30px;
+  font-size: 22px;
+}
+main #contact .contact .right li p {
+  padding-top: 10px;
+  color: gray;
+}
+main #testimonial {
+  padding: 50px 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(248, 248, 248);
+}
+main #testimonial p.name {
+  letter-spacing: 4px;
+  display: inline-block;
+  position: relative;
+  padding: 10px 30px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+main #testimonial p.name::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: black;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+}
+main #testimonial h1 {
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 28px;
+}
+main #testimonial .content {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  color: rgb(105, 103, 103);
+  flex-wrap: wrap;
+}
+main #testimonial .content .testimonial-item {
+  border-radius: 10px;
+  width: 75%;
+  margin: 0 auto;
+  overflow: visible;
+  padding: 50px 20px 0;
+  background-color: white;
+  position: relative;
+  letter-spacing: 1px;
+}
+@media screen and (max-width: 920px) {
+  main #testimonial .content .testimonial-item {
+    width: 70%;
+    margin-bottom: 60px;
+  }
+}
+main #testimonial .content .testimonial-item .img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: -15px;
+  transform: translate(-50%, 0);
+}
+main #testimonial .content .testimonial-item .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main #testimonial .content .testimonial-item .text {
+  padding: 20px 0;
+  width: 90%;
+}
+main #testimonial .content .testimonial-item .text .fullname {
+  padding: 30px 0 15px;
+  text-transform: capitalize;
+  color: black;
+  font-weight: 600;
+}
+main #testimonial .content .testimonial-item .text .job {
+  text-transform: capitalize;
+  font-size: 14px;
+}
+main #education {
+  padding: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main #education p.name {
+  letter-spacing: 4px;
+  display: inline-block;
+  position: relative;
+  padding: 10px 30px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+main #education p.name::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: black;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+}
+main #education h1 {
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 28px;
+}
+main #education .content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+main #education .content .left {
+  width: 50%;
+}
+@media screen and (max-width: 920px) {
+  main #education .content .left {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+main #education .content .left ul {
+  padding: 50px;
+}
+main #education .content .left li {
+  list-style: none;
+  padding: 30px 40px;
+  position: relative;
+}
+main #education .content .left li:before {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(228, 228, 228);
+  content: "";
+  top: 30px;
+  left: 0;
+  border-radius: 50%;
+}
+main #education .content .left li:after {
+  content: "";
+  position: absolute;
+  background-color: rgb(228, 228, 228);
+  width: 3px;
+  height: calc(100% - 10px);
+  top: 50px;
+  left: 8px;
+}
+main #education .content .left li:last-child::after {
+  content: "";
+  height: 0;
+}
+main #education .content .left p {
+  padding: 10px 0;
+  font-size: 15px;
+}
+main #education .content .left .description {
+  color: grey;
+}
+main #education .content .left .date {
+  font-size: 14px;
+}
+main #education .content .right {
+  width: 40%;
+  padding: 80px 10px;
+}
+@media screen and (max-width: 920px) {
+  main #education .content .right {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+main #education .content .right p {
+  line-height: 30px;
+  color: gray;
+}
+main #education .content .right ul {
+  list-style: none;
+  padding: 40px 0 0;
+}
+main #education .content .right li {
+  padding: 25px 0;
+  font-size: 15px;
+  font-weight: 600;
+  position: relative;
+  margin-bottom: 30px;
+}
+main #education .content .right li::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  width: 100%;
+  height: 10px;
+  background-color: rgb(228, 228, 228);
+  border-radius: 10px;
+}
+main #education .content .right li::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  width: 60%;
+  height: 10px;
+  background-color: rgba(146, 84, 196, 0.658);
+  left: 0;
+  border-radius: 10px;
+}
+main #education .content .right .angular::after {
+  width: 40%;
+}
+main #education .content .right .js::after {
+  width: 80%;
+}
+
+footer {
+  padding: 50px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: gray;
+}
+footer .icon {
+  padding: 20px;
+}
+footer .icon span {
+  padding: 0 15px;
+  font-size: 20px;
+}
+footer .copyright {
+  font-size: 15px;
+}
+
+@media (max-width: 752px) {
+  h2,
+p {
+    font-size: smaller !important;
+  }
+}/*# sourceMappingURL=style.css.map */

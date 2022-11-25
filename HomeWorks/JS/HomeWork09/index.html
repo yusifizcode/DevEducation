@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lobster&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--icon-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <title>JS Array Task</title>
+  </head>
+
+  <body>
+    <header>
+      <section id="top">
+        <div class="top">
+          <div class="logo">
+            <img src="./assets/img/letter-y (2).png" alt="logo" />
+            <p>Yusif</p>
+          </div>
+          <div class="nav">
+            <ul>
+              <li>Services</li>
+              <li>Portifolios</li>
+              <li>Experience</li>
+              <li>Blog</li>
+              <li><i class="fa-solid fa-ellipsis"></i></li>
+            </ul>
+          </div>
+          <div class="button">
+            <button><i class="fa-solid fa-moon"></i></button>
+            <button>Resume</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="hero">
+        <div class="hero">
+          <div class="text">
+            <p class="name">MY NAME IS</p>
+            <h1>Yusif <span>Osmanov</span></h1>
+            <p>
+              Creative front-end developer with more than +5 years of experience
+              in enterprise companies and startups. Proficient in JavaScript,
+              Angular, and React. Passionate about UI/UX
+            </p>
+            <div class="icon">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-github"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+          </div>
+          <div class="img">
+            <img src="./assets/img/avatar1403372997.jpg" alt="photo" />
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section id="service">
+        <div class="service">
+          <p class="name">Services</p>
+          <h1>Specialized in</h1>
+          <div class="content">
+            <div class="item">
+              <span><i class="fa-solid fa-crown"></i></span>
+              <h3>UI/UX Design</h3>
+              <p>
+                Turn what you have in mind of a digital product into reality.
+                For any platform you consider.
+              </p>
+            </div>
+
+            <div class="item">
+              <span><i class="fa-solid fa-layer-group"></i></span>
+              <h3>UI/UX Design</h3>
+              <p>
+                Turn what you have in mind of a digital product into reality.
+                For any platform you consider.
+              </p>
+            </div>
+
+            <div class="item">
+              <span><i class="fa-solid fa-globe"></i></span>
+              <h3>UI/UX Design</h3>
+              <p>
+                Turn what you have in mind of a digital product into reality.
+                For any platform you consider.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio">
+        <div class="portfolio">
+          <p class="name">My works</p>
+          <h1>Featured Portfolios</h1>
+          <div class="content">
+            <div class="item">
+              <div class="img">
+                <img src="./assets/img/veb1.png" alt="img" />
+              </div>
+              <h4>Agency Website.</h4>
+              <a href="#"
+                ><span>WordPress</span
+                ><span><i class="fa-solid fa-link"></i></span
+              ></a>
+            </div>
+
+            <div class="item">
+              <div class="img">
+                <img src="./assets/img/veb2.jfif" alt="img" />
+              </div>
+              <h4>Agency Website.</h4>
+              <a href="#"
+                ><span>WordPress</span
+                ><span><i class="fa-solid fa-link"></i></span
+              ></a>
+            </div>
+
+            <div class="item">
+              <div class="img">
+                <img src="./assets/img/veb3.jpg" alt="img" />
+              </div>
+              <h4>Agency Website.</h4>
+              <a href="#"
+                ><span>WordPress</span
+                ><span><i class="fa-solid fa-link"></i></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience">
+        <div class="experience">
+          <div class="content">
+            <div class="left">
+              <p class="name">career path</p>
+              <h1>Work Experices</h1>
+              <ul>
+                <li>Apple <i class="fa-solid fa-chevron-right"></i></li>
+                <li>Microsoft</li>
+                <li>Facebook</li>
+                <li>Slack</li>
+              </ul>
+            </div>
+            <div class="right">
+              <h4>Front-end Developer Apple .Inc</h4>
+              <p class="adress">California, United States</p>
+              <p class="date">Nov 2020 - Present · Full-time</p>
+              <ul>
+                <li>Improving overall website performance for mobile users.</li>
+                <li>
+                  Collaborate with back-end developers and web designers to
+                  improve usability
+                </li>
+                <li>Add voice search feature for mobile app.</li>
+                <li>
+                  Developing an admin panel to manage contents, users, products
+                  and ...
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="blog">
+        <div class="blog">
+          <p class="name">my articles</p>
+          <h1>personal blog</h1>
+          <div class="content">
+            <!-- <div class="item">
+                        <div class="img">
+                            <img src="./assets/img/d54a6345d13113da84ec3d175b1c0359.jpg" alt="img">
+                        </div>
+                        <div class="text">
+                            <h3>How to prototype in figma </h3>
+                            <p class="date">July 15 , 2021</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id magna nec ante
+                                scelerisque laoreet. Fusce finibus ...
+                            </p>
+                            <p class="contunie">contunie reading</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="img">
+                            <img src="./assets/img/e4b03e7d2b8ec8085affb4e73347135f.jpg" alt="img">
+                        </div>
+                        <div class="text">
+                            <h3>How to prototype in figma </h3>
+                            <p class="date">July 15 , 2021</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id magna nec ante
+                                scelerisque laoreet. Fusce finibus ...
+                            </p>
+                            <p class="contunie">contunie reading</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="img">
+                            <img src="./assets/img/ea4780bf6eda0627b358e055d94959e5.jpg" alt="img">
+                        </div>
+                        <div class="text">
+                            <h3>How to prototype in figma </h3>
+                            <p class="date">July 15 , 2021</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id magna nec ante
+                                scelerisque laoreet. Fusce finibus ...
+                            </p>
+                            <p class="contunie">contunie reading</p>
+                        </div>
+                    </div> -->
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonial">
+        <div class="testimonial">
+          <p class="name">my cilents</p>
+          <h1>Testimonials</h1>
+          <div class="content owl-carousel owl-theme">
+            <div class="item">
+              <div class="testimonial-item">
+                <div class="img">
+                  <img
+                    src="./assets/img/d006edb135bca7573615fc4beb6858bc.jpg"
+                    alt="img"
+                  />
+                </div>
+                <div class="text">
+                  <p>
+                    We were very pleased to hear how you resolved our website's
+                    user interface issues and challenges.
+                  </p>
+                  <p class="fullname">Amelia miller</p>
+                  <p class="job">designer</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="testimonial-item">
+                <div class="img">
+                  <img
+                    src="./assets/img/2b9f2730a40d657318fbfc409f956736.jpg"
+                    alt="img"
+                  />
+                </div>
+                <div class="text">
+                  <p>
+                    We were very pleased to hear how you resolved our website's
+                    user interface issues and challenges.
+                  </p>
+                  <p class="fullname">Amelia miller</p>
+                  <p class="job">designer</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="testimonial-item">
+                <div class="img">
+                  <img
+                    src="./assets/img/3821a3ccc7bd7c95489df15b14718fcf.jpg"
+                    alt="img"
+                  />
+                </div>
+                <div class="text">
+                  <p>
+                    We were very pleased to hear how you resolved our website's
+                    user interface issues and challenges.
+                  </p>
+                  <p class="fullname">Amelia miller</p>
+                  <p class="job">designer</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="item">
+              <div class="testimonial-item">
+                <div class="img">
+                  <img
+                    src="./assets/img/2b9f2730a40d657318fbfc409f956736.jpg"
+                    alt="img"
+                  />
+                </div>
+                <div class="text">
+                  <p>
+                    We were very pleased to hear how you resolved our website's
+                    user interface issues and challenges.
+                  </p>
+                  <p class="fullname">Amelia miller</p>
+                  <p class="job">designer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="education">
+        <div class="education">
+          <p class="name">learning path</p>
+          <h1>Education & Skills</h1>
+        </div>
+        <div class="content">
+          <div class="left">
+            <ul>
+              <li>
+                <h4 class="uni">Kingston university</h4>
+                <p class="description">
+                  Master's degree - Software Engineering
+                </p>
+                <p class="date">2019 - 2021</p>
+              </li>
+              <li>
+                <h4 class="uni">Kingston university</h4>
+                <p class="description">
+                  Master's degree - Software Engineering
+                </p>
+                <p class="date">2019 - 2021</p>
+              </li>
+              <li>
+                <h4 class="uni">Kingston university</h4>
+                <p class="description">
+                  Master's degree - Software Engineering
+                </p>
+                <p class="date">2019 - 2021</p>
+              </li>
+            </ul>
+          </div>
+          <div class="right">
+            <p>
+              For 5+ years, I have been continuously learning in the field of
+              front-end and experimenting with new technologies and frameworks,
+              and here you can see a summary of my skills.
+            </p>
+            <ul>
+              <li class="react">React</li>
+              <li class="angular">Angular</li>
+              <li class="js">JavaScript</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="contact">
+          <div class="left">
+            <form action="get">
+              <label for="name">
+                <input type="text" placeholder="Name" />
+              </label>
+
+              <label for="name">
+                <input type="email" placeholder="Email" />
+              </label>
+
+              <textarea
+                name="Massage"
+                id="mes"
+                cols="30"
+                rows="10"
+                placeholder="Message"
+              ></textarea>
+
+              <button>Send Message</button>
+            </form>
+          </div>
+          <div class="right">
+            <ul>
+              <li>
+                <div class="icon"><i class="fa-solid fa-map-pin"></i></div>
+                <div class="text">
+                  <h4>Address</h4>
+                  <p>3424 Layman Avenue, Fayetteville, NC</p>
+                </div>
+              </li>
+              <li>
+                <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="text">
+                  <h4>Phone</h4>
+                  <p>(501) 414-1541</p>
+                </div>
+              </li>
+              <li>
+                <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="text">
+                  <h4>E-Mail</h4>
+                  <p>devchapter@gmail.com</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="icon">
+        <span><i class="fa-brands fa-instagram"></i></span>
+        <span><i class="fa-brands fa-github"></i></span>
+        <span><i class="fa-brands fa-twitter"></i></span>
+        <span><i class="fa-brands fa-linkedin-in"></i></span>
+      </div>
+      <div class="copyright">© 2022 - DevChapter</div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+          $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      responsiveClass:true,
+      responsive:{
+          0:{
+              items:1,
+              nav:true
+          },
+          600:{
+              items:3,
+              nav:false
+          },
+          1000:{
+              items:3,
+              nav:false,
+              loop:true,
+          }
+      }
+  })
+    </script>
+    <script src="./assets/js/main.js"></script>
+
+  </body>
+</html>
